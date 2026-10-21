@@ -1,0 +1,284 @@
+{
+  "app_version": "0.7.0-dev",
+  "date": "2026-10-21",
+  "files": [
+    {
+      "path": "src/Catalogs/ВидыДокументации/Ext/ObjectModule.bsl",
+      "sha256": "db88569234ee3c1cdd1be9e5ea15479473d0206791baabdc474ff6376bd270dd"
+    },
+    {
+      "path": "src/Catalogs/ВидыДокументации.xml",
+      "sha256": "83e9c6ce7d0021c6e7d2c4428d9a8eade63fee56ad93a4753fc20e02d336fa08"
+    },
+    {
+      "path": "src/Catalogs/ДокументыПродуктов/Ext/ObjectModule.bsl",
+      "sha256": "c42417111fc7ccb15750059473570eddbd073e3cdc35e4173b9328d8c75cfc76"
+    },
+    {
+      "path": "src/Catalogs/ДокументыПродуктов.xml",
+      "sha256": "6b1a35740fd4e009cc3afe894b35aad2e36da60bd1cdfc4124b22f9e79a76a49"
+    },
+    {
+      "path": "src/Catalogs/Продукты/Ext/ObjectModule.bsl",
+      "sha256": "db88569234ee3c1cdd1be9e5ea15479473d0206791baabdc474ff6376bd270dd"
+    },
+    {
+      "path": "src/Catalogs/Продукты.xml",
+      "sha256": "19a8f7ea2ad63826df900fa040ed511e25a5f91df551e967ceba78f96fee9de4"
+    },
+    {
+      "path": "src/Catalogs/РедакцииДокументов/Ext/ObjectModule.bsl",
+      "sha256": "d6d8a035ebf1ee1ee9f172a9dd8f2f8c2ecbbaab693c35779235b628b1d23295"
+    },
+    {
+      "path": "src/Catalogs/РедакцииДокументов.xml",
+      "sha256": "d684a47e4a36def041be11032ec3d60f02addea189a208537cdd0fc6622a1c1c"
+    },
+    {
+      "path": "src/Catalogs/Сотрудники/Ext/ObjectModule.bsl",
+      "sha256": "ef342133ed5c4e942c85935d2f34212ec8877afbc9d186fb5558a5b774ba1598"
+    },
+    {
+      "path": "src/Catalogs/Сотрудники.xml",
+      "sha256": "462ca63b6ab021f5680bc45866b2dd1a2c49f46fd9f25ddb0d0533866e4105bf"
+    },
+    {
+      "path": "src/CommonCommands/ГотовностьКомплекта/Ext/CommandModule.bsl",
+      "sha256": "92bdaf242b857229d5ef361a3ebf31c4ebf6d8c337eee09a6a63b44a92f8a65c"
+    },
+    {
+      "path": "src/CommonCommands/ГотовностьКомплекта.xml",
+      "sha256": "134d0482eb3437c094338698fd5f787b2f59be103d96d6dd39780db6506a3918"
+    },
+    {
+      "path": "src/CommonModules/ГотовностьКомплектов/Ext/Module.bsl",
+      "sha256": "f39a1d5e098569233c16a76318671c223ad05dadab3f161fd9d1904d814a58e6"
+    },
+    {
+      "path": "src/CommonModules/ГотовностьКомплектов.xml",
+      "sha256": "36028589f9a750e19ab6dd2082bfac734a8e4f7f32f30d2ff8ef5a329a4f13fe"
+    },
+    {
+      "path": "src/CommonModules/КонтрольВыпуска/Ext/Module.bsl",
+      "sha256": "eb1961d1e1b9701d965e47997c8b9b4f3934501e9351bbea8d439b8830fc8766"
+    },
+    {
+      "path": "src/CommonModules/КонтрольВыпуска.xml",
+      "sha256": "cbef841180405c27fcb546f7f0af2b2167088d644aab522935a92d1fcdc4a2cf"
+    },
+    {
+      "path": "src/CommonModules/КонтрольДокументации/Ext/Module.bsl",
+      "sha256": "87acadb7c1532b2df613a6a6294522a374760b4a07645be1cbc40a167822fe58"
+    },
+    {
+      "path": "src/CommonModules/КонтрольДокументации.xml",
+      "sha256": "2ea4e24ff74716883a87bf92b564a1decacaee7fa5101e7eda94374609424223"
+    },
+    {
+      "path": "src/CommonModules/КонтрольКомплектов/Ext/Module.bsl",
+      "sha256": "446a34a89474af157969ca5e1f05d5569baef57efe71db835104e534693da77b"
+    },
+    {
+      "path": "src/CommonModules/КонтрольКомплектов.xml",
+      "sha256": "1c865eea1ffbf415abe5b2aa5cde73ac21597ab69fb50be5152d503ea430e982"
+    },
+    {
+      "path": "src/CommonModules/ПраваДокументации/Ext/Module.bsl",
+      "sha256": "6dc14e34797274e0059d12d0aaa9ee1ac2748f098b596c5987dacc5a10b2062b"
+    },
+    {
+      "path": "src/CommonModules/ПраваДокументации.xml",
+      "sha256": "ac10799c43c904c706def03e6e1de01c33c4b2e39315a1f6db720074908ee70b"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиВыпуска/Ext/Module.bsl",
+      "sha256": "fd497d9df73bd7aa1cb475da32c1171b6d35e0e3ab1202b03539d8a113940911"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиВыпуска.xml",
+      "sha256": "e845d708c661d36d85ca8f1c62ff85da598cb9c0247b3327ea4f49ccf899ee25"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиГотовности/Ext/Module.bsl",
+      "sha256": "f8a2762460a6486b17298a427b7f525521153cdf8977b3acb97c0ca88f29722a"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиГотовности.xml",
+      "sha256": "76bdf76edc473a3774c7f781cf5b9f6cc6eb990c76f586519e5c7e423599a161"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиКомплектов/Ext/Module.bsl",
+      "sha256": "1adbe6753d03a6a47f8ba0bafd9d8a57149198c1954e377212e2ac991f56e3d9"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиКомплектов.xml",
+      "sha256": "a34359316e5d84f39b4aff227714db047b63806516a231d301b2aaef47242540"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиОтчетов/Ext/Module.bsl",
+      "sha256": "368a2306254f2380eb881492ab80917cca896665c7dd022f7aa9843f337c8972"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиОтчетов.xml",
+      "sha256": "865e114f3fabd28d3f1ba1c4b58844c177e7bc934bb485bdb10ee8b246bf88db"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиПрав/Ext/Module.bsl",
+      "sha256": "25b41b33d9c0714bbdc2c23ca9e2fd8b094d49f65f53bcc7ba077b537c9b08b1"
+    },
+    {
+      "path": "src/CommonModules/ПроверкиПрав.xml",
+      "sha256": "b12eb6ce8683d06de0c9f711263c5d5534ad687ba3021c72b68507c1e9507402"
+    },
+    {
+      "path": "src/CommonModules/СервисОтчетов/Ext/Module.bsl",
+      "sha256": "79765318c2c83ca5bd76ab8ff16e66c7a0bac56c11b4d3e5da751c949dd696aa"
+    },
+    {
+      "path": "src/CommonModules/СервисОтчетов.xml",
+      "sha256": "aa76d59031de1c6d527c4eba5a94e283e651faa42b75b3447bc7c95f135bf935"
+    },
+    {
+      "path": "src/CommonModules/СервисПрототипа/Ext/Module.bsl",
+      "sha256": "fe596a699cb0cbb78e24adee4cb08a60be75347f4cb2deb6ae90699feb5fbebb"
+    },
+    {
+      "path": "src/CommonModules/СервисПрототипа.xml",
+      "sha256": "67637ab20def999cca858293eb88b13079ef083785c783887731b2912cbdffbd"
+    },
+    {
+      "path": "src/ConfigDumpInfo.xml",
+      "sha256": "b093b9b8a52635c1ff075f88848fe4453bdc2f94fba3bc96f65475f858e6d935"
+    },
+    {
+      "path": "src/Configuration.xml",
+      "sha256": "b68e99a0529eabaf1c9096ae735e754db0e800ede92edf5b5c5116b392a7257d"
+    },
+    {
+      "path": "src/Documents/ВыпускКомплекта/Ext/ObjectModule.bsl",
+      "sha256": "92e183b7ed9fd49cd8d5d930293f8ae9502cd42a86d5b4523800e3d5c6a1eaca"
+    },
+    {
+      "path": "src/Documents/ВыпускКомплекта.xml",
+      "sha256": "e0195ccff466d9f2c5ff01ee927f6e7b248cb85fa9f3679fa85d3a00b8b0be8b"
+    },
+    {
+      "path": "src/Documents/ПередачаНаПроверку/Ext/ObjectModule.bsl",
+      "sha256": "38fbef16b99c9dd0815ccf4fa8e9f6e53ca4948286583433de0ba3989eee212c"
+    },
+    {
+      "path": "src/Documents/ПередачаНаПроверку.xml",
+      "sha256": "f4366b438d2c39a87cefd4bbde96cf657ba3c0688acbaa7a11dc8d80af6e3b31"
+    },
+    {
+      "path": "src/Documents/ПланКомплекта/Ext/ObjectModule.bsl",
+      "sha256": "34150682ef93e885d1f57c9e7e492ef4ab0c3415cc9e9aa8eee95ed58d1ed31a"
+    },
+    {
+      "path": "src/Documents/ПланКомплекта.xml",
+      "sha256": "4a636cb469d75c99cd1b62d980db6625d00d30583b85b32c9cd21deed74be778"
+    },
+    {
+      "path": "src/Documents/РезультатПроверки/Ext/ObjectModule.bsl",
+      "sha256": "d6bf8d9c2b5c99d111cec7727d99f267f8ab18d8124ec441d2122a3e9f06ce70"
+    },
+    {
+      "path": "src/Documents/РезультатПроверки.xml",
+      "sha256": "212b3efb6081ec88f0dd57ad2fdad4dc3404583e1e74b131e528198e59b93565"
+    },
+    {
+      "path": "src/Enums/РешенияПроверки.xml",
+      "sha256": "4d5033d6d559f5f0c6af839a8a7da87d690603528393e8bef864dee88b81dd08"
+    },
+    {
+      "path": "src/Enums/СостоянияРедакции.xml",
+      "sha256": "47ea1686ff4cddd61d8496fcd206f06f2e86b296329705466aea6891ee00e53d"
+    },
+    {
+      "path": "src/Ext/ManagedApplicationModule.bsl",
+      "sha256": "cb1a24a3698f2efcc55c80133d2e93a5b32e2c84f97d8bf7cbaf1d130da62a5c"
+    },
+    {
+      "path": "src/InformationRegisters/СостоянияРедакций.xml",
+      "sha256": "2a7f2440eae9e25840b84a9ac686bddac4998b47135ebab66aaf52b280f2817a"
+    },
+    {
+      "path": "src/Languages/Русский.xml",
+      "sha256": "63a854fc48407ac85b070e165212f25bf81292d1f3b92d4169df87f2ffaa9408"
+    },
+    {
+      "path": "src/Reports/ДокументыНаПроверке/Ext/ObjectModule.bsl",
+      "sha256": "8952a2a2512e6ab3e0b412ba2eeca9f6002638c1204ceadccd54b12c71ed15f1"
+    },
+    {
+      "path": "src/Reports/ДокументыНаПроверке/Templates/ОсновнаяСхемаКомпоновкиДанных/Ext/Template.xml",
+      "sha256": "de5afb322de23e304d940bb8df5cef8d0537f635a0a4fa6e311adf2b96c31470"
+    },
+    {
+      "path": "src/Reports/ДокументыНаПроверке/Templates/ОсновнаяСхемаКомпоновкиДанных.xml",
+      "sha256": "b7119ae344d29aba28ab96a30166e589e3a0bf3b771fc7308dda0e67c63eca06"
+    },
+    {
+      "path": "src/Reports/ДокументыНаПроверке.xml",
+      "sha256": "ffc0b71ae506021d4a9e495d8cf60564f6c6ebeb64960846a724ba84c10ef9fd"
+    },
+    {
+      "path": "src/Reports/ИсторияРедакции/Ext/ObjectModule.bsl",
+      "sha256": "7d1afab734756905acd9d003c593708d9c2b4f363188f29a1becdb64a4b5a707"
+    },
+    {
+      "path": "src/Reports/ИсторияРедакции/Templates/ОсновнаяСхемаКомпоновкиДанных/Ext/Template.xml",
+      "sha256": "44c23d411466c49152e0b49460703262a9a0664a42503534d49ec289ce0cf32e"
+    },
+    {
+      "path": "src/Reports/ИсторияРедакции/Templates/ОсновнаяСхемаКомпоновкиДанных.xml",
+      "sha256": "ef114171d38533c78ebd263001874d6f95b1f44a379e29c418b30cea01afe877"
+    },
+    {
+      "path": "src/Reports/ИсторияРедакции.xml",
+      "sha256": "aa8b023e1462ad540cd09bfc1ea203b0affb2014843154ac162ce41d750d31d3"
+    },
+    {
+      "path": "src/Roles/АвторДокументации/Ext/Rights.xml",
+      "sha256": "f05807cbf35013949fc535a4671bc4c231f713f9d9428685b9d39865ca442124"
+    },
+    {
+      "path": "src/Roles/АвторДокументации.xml",
+      "sha256": "7a72bbf1d87b07e794bc5cdc38315e19e8a3bf742cd3a6ac169482870ca1f17b"
+    },
+    {
+      "path": "src/Roles/АдминистраторDocRelease/Ext/Rights.xml",
+      "sha256": "0e59e48020d869fa152bf0c0b83203f7d3c7bd20a26e2aae4c38ea141727f803"
+    },
+    {
+      "path": "src/Roles/АдминистраторDocRelease.xml",
+      "sha256": "f44034ad22c849f5dea8dc783bd548f13932e2e9b2eff7381ebc87296e213a87"
+    },
+    {
+      "path": "src/Roles/ПроверяющийДокументации/Ext/Rights.xml",
+      "sha256": "899d42153deff3dd108572907b366fc20c8c9e197b547e8a53aad7ed0f90a33b"
+    },
+    {
+      "path": "src/Roles/ПроверяющийДокументации.xml",
+      "sha256": "edb7ede8356fcbfc02c0b64471359b79b256b0ea2ff1ae54e7b90b9531cd6e11"
+    },
+    {
+      "path": "src/Roles/РуководительВыпуска/Ext/Rights.xml",
+      "sha256": "6029b8b80f777033dcfb0843b5dad5a42066ab84ddce559ba4a336478bcd0035"
+    },
+    {
+      "path": "src/Roles/РуководительВыпуска.xml",
+      "sha256": "65a024c42cff438778d6058d5908a47109c77a1e48d628eb789f9967e24ffde2"
+    },
+    {
+      "path": "src/Subsystems/Документация.xml",
+      "sha256": "6899a306202d26d9145f3cd5377efefa079ee4a6eba1b2dad63a8f7931827394"
+    },
+    {
+      "path": "src/Subsystems/НСИ.xml",
+      "sha256": "0563e1867dc2ca9aa19ccf21c4466fc5ecc5e59ed3e8e5e302c6fab5e416aa35"
+    }
+  ],
+  "metadata_files": 69,
+  "business_source_digest": "bbad9f3c0054c563c4090be3e088f27ce824a68935162b76941ef08b6fa94281"
+}

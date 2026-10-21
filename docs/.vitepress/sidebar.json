@@ -1,0 +1,190 @@
+{
+  "/user/": [
+    {
+      "text": "Пользователю",
+      "items": [
+        {
+          "text": "Руководство пользователя",
+          "link": "/user/"
+        },
+        {
+          "text": "Начало работы",
+          "link": "/user/getting-started"
+        },
+        {
+          "text": "Документы и редакции",
+          "link": "/user/author"
+        },
+        {
+          "text": "Передача на проверку",
+          "link": "/user/transfer"
+        },
+        {
+          "text": "Результат проверки",
+          "link": "/user/review"
+        },
+        {
+          "text": "План комплекта",
+          "link": "/user/plan"
+        },
+        {
+          "text": "Проверка готовности",
+          "link": "/user/readiness"
+        },
+        {
+          "text": "Выпуск комплекта",
+          "link": "/user/release"
+        },
+        {
+          "text": "Отчёты",
+          "link": "/user/reports"
+        }
+      ]
+    },
+    {
+      "text": "Другие разделы",
+      "items": [
+        {
+          "text": "Порядок работы",
+          "link": "/quickstart"
+        },
+        {
+          "text": "Роли и доступ",
+          "link": "/reference/roles"
+        },
+        {
+          "text": "Термины",
+          "link": "/reference/glossary"
+        }
+      ]
+    }
+  ],
+  "/admin/": [
+    {
+      "text": "Администратору",
+      "items": [
+        {
+          "text": "Руководство администратора",
+          "link": "/admin/"
+        },
+        {
+          "text": "Пользователи и сотрудники",
+          "link": "/admin/users"
+        },
+        {
+          "text": "Резервное копирование",
+          "link": "/admin/backup"
+        },
+        {
+          "text": "Обновление и обслуживание",
+          "link": "/admin/maintenance"
+        },
+        {
+          "text": "Помощь при неполадках",
+          "link": "/admin/diagnostics"
+        }
+      ]
+    },
+    {
+      "text": "Другие разделы",
+      "items": [
+        {
+          "text": "Порядок работы",
+          "link": "/quickstart"
+        },
+        {
+          "text": "Роли и доступ",
+          "link": "/reference/roles"
+        },
+        {
+          "text": "Термины",
+          "link": "/reference/glossary"
+        }
+      ]
+    }
+  ],
+  "/deployment/": [
+    {
+      "text": "Установка",
+      "items": [
+        {
+          "text": "Руководство по установке",
+          "link": "/deployment/"
+        },
+        {
+          "text": "Подготовка к установке",
+          "link": "/deployment/requirements"
+        },
+        {
+          "text": "Установка новой базы",
+          "link": "/deployment/install"
+        },
+        {
+          "text": "Первоначальная настройка",
+          "link": "/deployment/first-run"
+        }
+      ]
+    },
+    {
+      "text": "Другие разделы",
+      "items": [
+        {
+          "text": "Порядок работы",
+          "link": "/quickstart"
+        },
+        {
+          "text": "Роли и доступ",
+          "link": "/reference/roles"
+        },
+        {
+          "text": "Термины",
+          "link": "/reference/glossary"
+        }
+      ]
+    }
+  ],
+  "/reference/": [
+    {
+      "text": "Справочник",
+      "items": [
+        {
+          "text": "Роли и доступ",
+          "link": "/reference/roles"
+        },
+        {
+          "text": "Состояния редакции",
+          "link": "/reference/lifecycle"
+        },
+        {
+          "text": "Справочники и документы",
+          "link": "/reference/data"
+        },
+        {
+          "text": "Сообщения и исправления",
+          "link": "/reference/troubleshooting"
+        },
+        {
+          "text": "Термины",
+          "link": "/reference/glossary"
+        }
+      ]
+    },
+    {
+      "text": "Другие разделы",
+      "items": [
+        {
+          "text": "Порядок работы",
+          "link": "/quickstart"
+        },
+        {
+          "text": "Роли и доступ",
+          "link": "/reference/roles"
+        },
+        {
+          "text": "Термины",
+          "link": "/reference/glossary"
+        }
+      ]
+    }
+  ]
+}

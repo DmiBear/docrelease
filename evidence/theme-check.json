@@ -1,0 +1,39 @@
+{
+  "dark": {
+    "background": "#1b1b1f",
+    "button": "#ffdb35",
+    "buttonText": "#322800",
+    "dark": true,
+    "horizontalOverflow": false,
+    "link": "#ffdf62",
+    "secondary": "#98989f",
+    "text": "#dfdfd6",
+    "contrast": {
+      "text": 12.81,
+      "secondary": 5.99,
+      "link": 13.07,
+      "button": 10.73
+    }
+  },
+  "light": {
+    "background": "#ffffff",
+    "button": "#ffdb35",
+    "buttonText": "#322800",
+    "dark": false,
+    "horizontalOverflow": false,
+    "link": "#825400",
+    "secondary": "#67676c",
+    "text": "#3c3c43",
+    "contrast": {
+      "text": 10.94,
+      "secondary": 5.62,
+      "link": 6.53,
+      "button": 10.73
+    }
+  },
+  "mobile": {
+    "dark": false,
+    "horizontalOverflow": false,
+    "width": 390
+  }
+}

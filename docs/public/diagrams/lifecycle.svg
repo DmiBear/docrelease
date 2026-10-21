@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" role="img" aria-labelledby="t d">
+<title id="t">Редакция, проверка и выпуск</title><desc id="d">Новая редакция передаётся на проверку. Согласованная редакция входит в готовый план и выпуск. Возврат требует повторной проверки.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#42635d"/></marker></defs>
+<rect width="940" height="420" rx="16" fill="#f7faf8"/>
+<g fill="none" stroke="#42635d" stroke-width="2.5" marker-end="url(#arrow)"><path d="M204 99H278"/><path d="M474 99H550"/><path d="M648 139v89"/><path d="M278 270H204"/><path d="M376 139v82"/></g>
+<g font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#173c37">
+<g stroke="#8aaea4" stroke-width="1.5" fill="#eaf3ed"><rect x="24" y="59" width="180" height="80" rx="10"/><rect x="278" y="59" width="196" height="80" rx="10"/><rect x="550" y="59" width="196" height="80" rx="10"/><rect x="550" y="230" width="196" height="80" rx="10"/><rect x="278" y="230" width="196" height="80" rx="10"/><rect x="24" y="230" width="180" height="80" rx="10"/></g>
+<text x="114" y="93">Новая редакция<tspan x="114" dy="24" font-size="15">ссылка + идентификатор</tspan></text>
+<text x="376" y="93">Передача<tspan x="376" dy="24">На проверке</tspan></text>
+<text x="648" y="93">Решение<tspan x="648" dy="24">Согласована</tspan></text>
+<text x="648" y="264">План комплекта<tspan x="648" dy="24" font-size="15">все строки готовы</tspan></text>
+<text x="376" y="264">Решение<tspan x="376" dy="24">На доработке</tspan></text>
+<text x="114" y="264">Новая редакция<tspan x="114" dy="24" font-size="15">если текст изменён</tspan></text>
+<rect x="780" y="230" width="140" height="80" rx="10" fill="#145c57"/>
+<text x="850" y="265" fill="white">Выпуск<tspan x="850" dy="23" font-size="15">снимок состава</tspan></text>
+<text x="360" y="370" font-size="15">Неизменённый текст после возврата можно передать повторно.</text>
+</g><path d="M746 270H779" fill="none" stroke="#42635d" stroke-width="2.5" marker-end="url(#arrow)"/>
+</svg>

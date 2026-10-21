@@ -1,0 +1,54 @@
+/* Existing VitePress layout; a yellow palette inspired by the 1C workspace. */
+:root {
+  --vp-c-brand-1:#825400; --vp-c-brand-2:#986400; --vp-c-brand-3:#ffda30;
+  --vp-c-brand-soft:rgba(255,215,45,.20);
+  --vp-home-hero-name-color:#875700;
+  --vp-home-hero-image-background-image:linear-gradient(135deg,#ffe268,#fff2ae);
+  --vp-home-hero-image-filter:blur(55px);
+  --vp-c-bg:#ffffff; --vp-c-bg-alt:#fff9e7; --vp-c-bg-elv:#ffffff;
+  --vp-nav-bg-color:#fff1ac;
+  --vp-sidebar-bg-color:#fff8d9;
+  --vp-button-brand-border:#e4b820;
+  --vp-button-brand-text:#322800;
+  --vp-button-brand-bg:#ffdb35;
+  --vp-button-brand-hover-border:#cf9d00;
+  --vp-button-brand-hover-text:#211b00;
+  --vp-button-brand-hover-bg:#ffcf19;
+  --vp-button-brand-active-bg:#efbd00;
+}
+.dark {
+  --vp-c-bg:#1b1b1f; --vp-c-bg-alt:#161618; --vp-c-bg-elv:#202127;
+  --vp-c-brand-1:#ffdf62; --vp-c-brand-2:#ffe994; --vp-c-brand-3:#ffd83b;
+  --vp-c-brand-soft:rgba(255,216,59,.15);
+  --vp-home-hero-name-color:#ffdf62;
+  --vp-nav-bg-color:#302c1e;
+  --vp-sidebar-bg-color:#29271e;
+}
+.VPNavBar:not(.home) { background:var(--vp-nav-bg-color); }
+.VPNavBar.home { background:var(--vp-nav-bg-color); }
+/* Use VitePress' native accessible switch; keep it visible in the desktop bar. */
+@media (min-width:960px) {
+  .VPNavBarAppearance { display:flex!important; align-items:center; }
+  .VPNavBarExtra { display:none!important; }
+}
+.VPNavBarSearch .DocSearch-Button { background:var(--vp-c-bg); border:1px solid var(--vp-c-divider); }
+.VPHomeHero .name { letter-spacing:-.045em; }
+.VPHomeHero .text { max-width:680px; font-weight:650; }
+.VPHomeHero .tagline { max-width:670px; }
+.VPFeature { border-color:rgba(202,166,30,.25)!important; }
+.VPFeature:hover { border-color:#d1a52a!important; }
+.VPSidebarItem.is-active > .item { background:var(--vp-c-brand-soft); border-radius:4px; }
+.vp-doc img { border:1px solid var(--vp-c-divider); border-radius:8px; margin:24px auto 10px; }
+.vp-doc a:has(img) { cursor:zoom-in; }
+.vp-doc img + em, .vp-doc p:has(img) + p:has(em) { color:var(--vp-c-text-2); font-size:13px; line-height:1.6; }
+.vp-doc th { white-space:normal; }
+.vp-doc table { font-size:14px; }
+.vp-doc a:focus-visible, .vp-doc button:focus-visible { outline:3px solid var(--vp-c-brand-1); outline-offset:3px; }
+@media print {
+  .VPNav,.VPSidebar,.VPDocAside,.VPLocalNav,.VPDocFooter { display:none!important; }
+  .VPContent,.VPDoc,.content-container { margin:0!important; padding:0!important; max-width:none!important; }
+  .vp-doc img { max-height:18cm; break-inside:avoid; }
+  .vp-doc h2,.vp-doc h3 { break-after:avoid; }
+}
+
+@media print { :root, .dark { --vp-c-bg:#fff; --vp-c-text-1:#111; --vp-c-text-2:#333; --vp-c-brand-1:#644000; } }

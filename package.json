@@ -1,0 +1,25 @@
+{
+  "name": "docrelease",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Учебная система 1С и документация DocRelease на VitePress",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 127.0.0.1",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 127.0.0.1",
+    "docs:check": "node tools/check-docs.mjs",
+    "check": "npm run docs:check && npm run docs:build && npm run site:check",
+    "release:manifest": "node tools/release-manifest.mjs",
+    "site:check": "node tools/check-site.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  },
+  "overrides": {
+    "vite": "6.4.5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "DR-USER": [
+    "user/index.md",
+    "user/getting-started.md",
+    "user/author.md",
+    "user/transfer.md",
+    "user/review.md",
+    "user/plan.md",
+    "user/readiness.md",
+    "user/release.md",
+    "user/reports.md"
+  ],
+  "DR-ADMIN": [
+    "admin/index.md",
+    "admin/users.md",
+    "admin/backup.md",
+    "admin/maintenance.md",
+    "admin/diagnostics.md"
+  ],
+  "DR-INSTALL": [
+    "deployment/index.md",
+    "deployment/requirements.md",
+    "deployment/install.md",
+    "deployment/first-run.md"
+  ]
+}

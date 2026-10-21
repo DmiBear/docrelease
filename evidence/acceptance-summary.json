@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "kind": "portable_extract_not_native_log",
+  "app_version": "0.7.0-dev",
+  "platform": "8.3.27.1508",
+  "run_id": "acceptance-20261021-085540-fc8c02fd",
+  "date": "2026-10-21",
+  "passed": [
+    "TC-01",
+    "TC-02",
+    "TC-03",
+    "TC-04",
+    "TC-05",
+    "TC-06",
+    "TC-07",
+    "TC-08",
+    "TC-09",
+    "TC-10",
+    "TC-11",
+    "TC-12",
+    "TC-13",
+    "TC-14",
+    "TC-15",
+    "TC-16",
+    "TC-17"
+  ],
+  "environments": [
+    "closed_working_copy",
+    "clean_database"
+  ],
+  "per_environment": {
+    "core": 15,
+    "role_groups": 46,
+    "regression_groups": 64
+  },
+  "native_stages": 37,
+  "rehash_evidence_files": 524,
+  "manual_full_suite_in_this_run": false,
+  "teacher_approval": false,
+  "original_report_sha256": "8dad51d42c81569b0c3e01740cb4965e536c69a81d95d695c0dddb43db2adf3f",
+  "independent_verification_sha256": "7336eb9c026bd9c67809b7d1fa97bbfe02604a83ac1b8fbda7cfc2b563005060"
+}

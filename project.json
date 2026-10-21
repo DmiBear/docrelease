@@ -1,0 +1,23 @@
+{
+  "name": "DocRelease",
+  "app_version": "0.7.0-dev",
+  "docs_version": "1.1.0",
+  "verified_platform": "8.3.27.1508",
+  "guides": [
+    {
+      "id": "DR-USER",
+      "entry": "docs/user/index.md",
+      "role": "Пользователь"
+    },
+    {
+      "id": "DR-ADMIN",
+      "entry": "docs/admin/index.md",
+      "role": "Администратор"
+    },
+    {
+      "id": "DR-INSTALL",
+      "entry": "docs/deployment/index.md",
+      "role": "Установка"
+    }
+  ]
+}
