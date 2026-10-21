@@ -1,39 +1,106 @@
 {
-  "dark": {
-    "background": "#1b1b1f",
-    "button": "#ffdb35",
-    "buttonText": "#322800",
-    "dark": true,
-    "horizontalOverflow": false,
-    "link": "#ffdf62",
-    "secondary": "#98989f",
-    "text": "#dfdfd6",
-    "contrast": {
-      "text": 12.81,
-      "secondary": 5.99,
-      "link": 13.07,
-      "button": 10.73
+  "checked": "2026-10-21",
+  "appearance": "light-only",
+  "viewportOverrideReset": true,
+  "checks": [
+    {
+      "page": "home-desktop",
+      "background": "rgb(255, 255, 255)",
+      "button": "rgb(255, 219, 70)",
+      "buttonText": "rgb(48, 44, 27)",
+      "darkClass": false,
+      "documentWidth": 1265,
+      "horizontalOverflow": false,
+      "link": "rgb(109, 83, 16)",
+      "text": "rgb(44, 48, 54)",
+      "themeSwitches": 0,
+      "width": 1280
+    },
+    {
+      "page": "home-mobile",
+      "darkClass": false,
+      "documentWidth": 375,
+      "h1Count": 1,
+      "horizontalOverflow": false,
+      "themeSwitches": 0,
+      "width": 390
+    },
+    {
+      "page": "requirements-mobile",
+      "documentWidth": 375,
+      "horizontalOverflow": false,
+      "missingImages": [],
+      "tables": [
+        {
+          "contentWidth": 480,
+          "focusable": true,
+          "overflow": "auto",
+          "width": 325
+        }
+      ],
+      "themeSwitches": 0,
+      "width": 390
+    },
+    {
+      "page": "search-result-mobile",
+      "h1": "Резервное копирование ​",
+      "horizontalOverflow": false,
+      "path": "/admin/backup",
+      "width": 390
+    },
+    {
+      "page": "home-tablet",
+      "documentWidth": 753,
+      "horizontalOverflow": false,
+      "themeSwitches": 0,
+      "width": 768
+    },
+    {
+      "page": "install-desktop",
+      "background": "rgb(255, 255, 255)",
+      "darkClass": false,
+      "documentWidth": 1265,
+      "headerBackground": "rgb(255, 241, 173)",
+      "horizontalOverflow": false,
+      "link": "rgb(121, 85, 0)",
+      "missingImages": [],
+      "text": "rgb(44, 48, 54)",
+      "themeSwitches": 0,
+      "width": 1280
+    },
+    {
+      "page": "home-small-mobile",
+      "darkClass": false,
+      "documentWidth": 305,
+      "horizontalOverflow": false,
+      "themeSwitches": 0,
+      "width": 320
+    },
+    {
+      "page": "requirements-small-desktop",
+      "darkClass": false,
+      "documentWidth": 1009,
+      "headerBackground": "rgb(255, 241, 173)",
+      "horizontalOverflow": false,
+      "themeSwitches": 0,
+      "width": 1024
     }
+  ],
+  "interactions": {
+    "mobileNavigation": true,
+    "sidebarNavigation": true,
+    "searchQuery": "резервное",
+    "searchResultPath": "/admin/backup",
+    "tableKeyboardScrollPixels": 120
   },
-  "light": {
-    "background": "#ffffff",
-    "button": "#ffdb35",
-    "buttonText": "#322800",
-    "dark": false,
-    "horizontalOverflow": false,
-    "link": "#825400",
-    "secondary": "#67676c",
-    "text": "#3c3c43",
-    "contrast": {
-      "text": 10.94,
-      "secondary": 5.62,
-      "link": 6.53,
-      "button": 10.73
-    }
+  "contrast": {
+    "textOnWhite": 13.26,
+    "linkOnWhite": 7.25,
+    "primaryButton": 10.3
   },
-  "mobile": {
-    "dark": false,
-    "horizontalOverflow": false,
-    "width": 390
-  }
+  "resolved": [
+    "Tablet header overflow at 768px",
+    "Native minimum body width overflow at 320px"
+  ],
+  "scope": "Browser checks of the documentation website; the 1C application was not launched."
 }

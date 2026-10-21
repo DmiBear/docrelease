@@ -6,17 +6,24 @@ if (!/^\/(?:[a-zA-Z0-9._~-]+\/)*$/.test(base)) throw new Error('DOCS_BASE must s
 
 export default defineConfig({
   lang:'ru-RU', title:'DocRelease', description:'Руководства по работе с DocRelease: документы, проверка и выпуск комплекта',
-  appearance:{ initialValue:'light' },
+  appearance:false,
   base, cleanUrls:true, lastUpdated:false, ignoreDeadLinks:false,
   head:[['link',{rel:'icon',type:'image/svg+xml',href:base+'logo.svg'}],['meta',{name:'theme-color',content:'#ffdb35'}]],
-  markdown:{ lineNumbers:true },
+  markdown:{
+    lineNumbers:true,
+    config(md) {
+      const open = md.renderer.rules.table_open || (() => '<table>\n')
+      const close = md.renderer.rules.table_close || (() => '</table>\n')
+      md.renderer.rules.table_open = (...args) => '<div class="doc-table" role="region" aria-label="Таблица" tabindex="0">' + open(...args)
+      md.renderer.rules.table_close = (...args) => close(...args) + '</div>\n'
+    }
+  },
   themeConfig:{
     logo:'/logo.svg', siteTitle:'DocRelease',
     nav:[{"text": "Пользователю", "link": "/user/"}, {"text": "Администратору", "link": "/admin/"}, {"text": "Установка", "link": "/deployment/"}, {"text": "Справочник", "link": "/reference/roles"}],
     sidebar, outline:{level:[2,3],label:'На этой странице'},
     notFound:{title:'Страница не найдена',quote:'Выберите нужное руководство в меню или вернитесь на главную страницу.',linkLabel:'На главную страницу DocRelease',linkText:'На главную'},
     docFooter:{prev:'Назад',next:'Далее'}, sidebarMenuLabel:'Разделы', returnToTopLabel:'К началу',
-    darkModeSwitchLabel:'Тема',lightModeSwitchTitle:'Светлая тема',darkModeSwitchTitle:'Тёмная тема',
     skipToContentLabel:'Перейти к содержанию',
     footer:{message:'DocRelease · Подготовка и выпуск документации'},
     search:{provider:'local',options:{

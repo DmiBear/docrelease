@@ -7,5 +7,3 @@
 *.cmd text eol=crlf
 *.png binary
 *.jpg binary
-# Preserve exact 1C export bytes for source snapshot checksums.
-src/** -text

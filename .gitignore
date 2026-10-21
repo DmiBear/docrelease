@@ -18,3 +18,11 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .wrangler/
+
+# Application sources and database helpers are kept outside this documentation repository.
+/src/
+/tools/database.mjs
+/Открыть_DocRelease.cmd
+/Открыть_Конфигуратор.cmd
+/evidence/source-snapshot.json
+/evidence/database-check.json

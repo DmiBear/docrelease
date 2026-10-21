@@ -45,11 +45,7 @@ for(const guide of project.guides){
 }
 const media=json('evidence/media-manifest.json').images
 for(const item of media){const p=path.join(root,item.file);if(!fs.existsSync(p)||sha(p)!==item.sha256)errors.push(`Image changed: ${item.file}`)}
-const snap=json('evidence/source-snapshot.json')
-for(const item of snap.files){const p=path.join(root,item.path);if(!fs.existsSync(p)||sha(p)!==item.sha256)errors.push(`1C source changed: ${item.path}`)}
-const sourceFiles=walk(path.join(root,'src')).filter(p=>/\.(xml|bsl)$/.test(p))
-if(sourceFiles.length!==snap.files.length)errors.push('1C source inventory changed')
 const publicFiles=walk(docs).filter(p=>inside(path.join(docs,'public'),p))
 if(publicFiles.some(p=>/\.(?:1cd|dt|cf|log|epf)$/i.test(p)))errors.push('Local database or log in public assets')
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
-console.log(`PASS: ${md.length} pages; ${project.guides.length} guides; ${links} links; ${images} image references; ${media.length} original screenshots; ${snap.files.length} unchanged XML/BSL files`)
+console.log(`PASS: ${md.length} pages; ${project.guides.length} guides; ${links} links; ${images} image references; ${media.length} original screenshots`)
