@@ -3,8 +3,8 @@ title: "Проверка готовности"
 description: "Проверка готовности — работа в DocRelease"
 doc_id: DR-USER
 app_version: 0.7.0-dev
-docs_version: 1.1.0
-reviewed: 2026-10-21
+docs_version: 1.1.1
+reviewed: 2026-10-22
 ---
 
 # Проверка готовности

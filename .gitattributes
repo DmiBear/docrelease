@@ -7,3 +7,6 @@
 *.cmd text eol=crlf
 *.png binary
 *.jpg binary
+*.zip binary
+# Preserve the bytes shared by the source folder and the installation ZIP on every OS.
+/application/0.7.0-dev/configuration/** -text

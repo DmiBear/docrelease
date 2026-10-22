@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import DocContext from './components/DocContext.vue'
 import DocReleaseHome from './components/DocReleaseHome.vue'
+import DownloadPackage from './components/DownloadPackage.vue'
 import './style.css'
 export default {
   extends: DefaultTheme,
@@ -10,5 +11,6 @@ export default {
   },
   enhanceApp({ app }) {
     app.component('DocReleaseHome', DocReleaseHome)
+    app.component('DownloadPackage', DownloadPackage)
   }
 }

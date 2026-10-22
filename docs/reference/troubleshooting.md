@@ -3,7 +3,7 @@ title: "Сообщения и исправления"
 description: "Сообщения и исправления — работа в DocRelease"
 doc_id: REF
 app_version: 0.7.0-dev
-docs_version: 1.1.0
+docs_version: 1.1.1
 reviewed: 2026-10-21
 ---
 

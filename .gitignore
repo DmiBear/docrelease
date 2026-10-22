@@ -19,7 +19,7 @@ __pycache__/
 Thumbs.db
 .wrangler/
 
-# Application sources and database helpers are kept outside this documentation repository.
+# Working app/database helpers stay outside this repository; the reviewed installation kit is in application/.
 /src/
 /tools/database.mjs
 /Открыть_DocRelease.cmd

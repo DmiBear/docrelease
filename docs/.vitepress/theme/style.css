@@ -74,9 +74,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 
 /* The frame is part of the page; the original images remain untouched. */
 .vp-doc p:has(> a > img) { margin: 26px 0 0; }
-.vp-doc a:has(> img) { display: block; padding: 8px; border: 1px solid #e0dfd5; border-radius: 7px; background: #faf9f3; cursor: zoom-in; transition: border-color .15s; }
+.vp-doc a:has(> img) { display: block; width: fit-content; max-width: 100%; padding: 8px; border: 1px solid #e0dfd5; border-radius: 7px; background: #faf9f3; cursor: zoom-in; transition: border-color .15s; }
 .vp-doc a:has(> img):hover { border-color: #b89a3c; }
-.vp-doc a > img { display: block; width: 100%; height: auto; margin: 0; border: 1px solid #e9e8df; border-radius: 2px; }
+.vp-doc a > img { display: block; width: auto; max-width: 100%; height: auto; margin: 0; border: 1px solid #e9e8df; border-radius: 2px; }
 .vp-doc p:has(img) + p:has(em) { margin: 9px 0 24px; color: #6c6e65; font-size: 12px; line-height: 1.65; }
 .vp-doc p:has(img) + p > em { font-style: normal; }
 .VPDocAsideOutline .content { border-left-color: #e5e3d8; }
@@ -198,3 +198,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   .vp-doc img { max-height: 18cm; break-inside: avoid; }
   .vp-doc h2, .vp-doc h3 { break-after: avoid; }
 }
+
+/* Download and source inspection are two explicit actions for the same package. */
+.download-package { margin: 26px 0; padding: 22px; border: 1px solid #e7d58f; border-radius: 7px; background: #fffbeb; }
+.download-package .package-title { margin: 0 0 8px; font-size: 19px; font-weight: 650; color: #35372e; }
+.download-package .package-details { margin: 0; color: #626354; font-size: 14px; }
+.download-package .package-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 20px; margin-top: 18px; }
+.download-package a.package-download { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; padding: 10px 16px; border: 1px solid #d2af2e; border-radius: 5px; background: #ffdb46; color: #332d18; font-size: 14px; font-weight: 600; text-decoration: none; }
+.download-package a.package-download:hover { background: #ffd32d; }
+.download-package .package-source { font-size: 14px; }
+.download-package .package-integrity { margin: 14px 0 0; color: #6b6e60; font-size: 12px; }
+@media (max-width: 639px) { .download-package { padding: 18px; } .download-package .package-actions { align-items: stretch; flex-direction: column; } .download-package a.package-download { justify-content: center; } }

@@ -4,6 +4,7 @@ import crypto from 'node:crypto'
 import { execFileSync } from 'node:child_process'
 const root=process.cwd(), read=p=>fs.readFileSync(path.join(root,p),'utf8')
 const project=JSON.parse(read('project.json')), order=JSON.parse(read('guide-order.json'))
+const kit=JSON.parse(read('docs/public/downloads/package-manifest.json'))
 const out=path.join(root,'exports');fs.mkdirSync(out,{recursive:true})
 const sha=buffer=>crypto.createHash('sha256').update(buffer).digest('hex')
 let commit=null;try{commit=execFileSync('git',['rev-parse','--verify','HEAD'],{cwd:root,stdio:['ignore','pipe','ignore']}).toString().trim()}catch{}
@@ -13,6 +14,7 @@ for(const guide of project.guides){
   for(const chapter of chapters){
     const file='docs/'+chapter,raw=read(file);sources.push({path:file,sha256:sha(raw)})
     let body=raw.replace(/^---\r?\n[\s\S]*?\r?\n---\s*/,'')
+    body=body.replace(/<DownloadPackage\s*\/>/g,`**[Скачать DocRelease](/downloads/${kit.filename})** · ZIP, ${Math.round(kit.bytes/1024)} КБ.\n\n[Посмотреть файлы конфигурации на GitHub](https://github.com/DmiBear/docrelease/tree/main/application/${kit.app_version}/configuration).`)
     body=body.replace(/^(#{1,5}) /gm,'#$1 ')
     body=body.replace(/(\]\()([^\s)]+)(\))/g,(_,pre,url,post)=>{
       if(/^(?:https?:|mailto:|#)/.test(url))return pre+url+post

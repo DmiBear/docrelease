@@ -3,7 +3,7 @@ title: "Как вести документацию"
 description: "Как вести документацию — DocRelease 0.7.0-dev"
 doc_id: REF
 app_version: 0.7.0-dev
-docs_version: 1.1.0
+docs_version: 1.1.1
 reviewed: 2026-10-21
 ---
 

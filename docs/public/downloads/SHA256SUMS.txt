@@ -1,0 +1,1 @@
+a7a6c3463be520d74848058adefd5b645b5a9c8ad5281eacee385e401b6c8dce  DocRelease-0.7.0-dev.zip

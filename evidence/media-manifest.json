@@ -3,195 +3,452 @@
   "images": [
     {
       "file": "docs/public/images/ui-01-home.png",
-      "figure": "01",
-      "caption": "Рисунок 1 — Главное окно DocRelease.",
       "role": "Администратор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "898c5319952f262fa85459f516a44e18217d3cca97affb563f03e839e489809b"
+      "sha256": "898c5319952f262fa85459f516a44e18217d3cca97affb563f03e839e489809b",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/getting-started.md",
+          "figure": 2,
+          "caption": "Рисунок 2 — Главное окно DocRelease под администратором."
+        },
+        {
+          "guide": "DR-INSTALL",
+          "page": "deployment/first-run.md",
+          "figure": 6,
+          "caption": "Рисунок 6 — Главное окно после входа под администратором."
+        }
+      ],
+      "source_name": "codex-clipboard-fc630bb4-5c05-491e-8353-7875defc1340.png"
     },
     {
       "file": "docs/public/images/ui-02-users.png",
-      "figure": "02",
-      "caption": "Рисунок 2 — Список пользователей информационной базы.",
       "role": "Администратор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "7dbb60fb04ffa362ccbf4a8abd0ffe26e6cea18d030f750eeee2bb5b72c05615"
+      "sha256": "7dbb60fb04ffa362ccbf4a8abd0ffe26e6cea18d030f750eeee2bb5b72c05615",
+      "uses": [
+        {
+          "guide": "DR-ADMIN",
+          "page": "admin/users.md",
+          "figure": 1,
+          "caption": "Рисунок 1 — Четыре пользователя в списке Конфигуратора."
+        }
+      ],
+      "source_name": "codex-clipboard-126cef70-e6ff-4798-b050-c5f28c25fab2.png"
     },
     {
       "file": "docs/public/images/ui-03-employees.png",
-      "figure": "03",
-      "caption": "Рисунок 3 — Связь сотрудников с пользователями базы.",
       "role": "Администратор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "d436b6b578731c7e0e3383808421960297c6c568a47455f7c40398a7237252b8"
+      "sha256": "d436b6b578731c7e0e3383808421960297c6c568a47455f7c40398a7237252b8",
+      "uses": [
+        {
+          "guide": "DR-ADMIN",
+          "page": "admin/users.md",
+          "figure": 5,
+          "caption": "Рисунок 5 — Имена и идентификаторы пользователей заполнены после установки связи."
+        },
+        {
+          "guide": "DR-INSTALL",
+          "page": "deployment/first-run.md",
+          "figure": 7,
+          "caption": "Рисунок 7 — Пример настроенной связи сотрудников с автором и проверяющим."
+        }
+      ],
+      "source_name": "codex-clipboard-9ee797e9-ab51-4a0f-8d43-bc3688ef9d5a.png"
     },
     {
       "file": "docs/public/images/ui-04-author.png",
-      "figure": "04",
-      "caption": "Рисунок 4 — Просмотр справочника «Сотрудники» под пользователем с ролью автора.",
       "role": "Автор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "ee6477d0c06195433e56f2db117f6ce26299539c6ee0c6a2f756098eb4b37a94"
+      "sha256": "ee6477d0c06195433e56f2db117f6ce26299539c6ee0c6a2f756098eb4b37a94",
+      "uses": [
+        {
+          "guide": "DR-ADMIN",
+          "page": "admin/users.md",
+          "figure": 6,
+          "caption": "Рисунок 6 — Список сотрудников под автором: просмотр без кнопки «Создать»."
+        }
+      ],
+      "source_name": "codex-clipboard-eabd9e20-1216-42a0-80c5-65430a2bc1ae.png"
     },
     {
       "file": "docs/public/images/ui-05-editions.png",
-      "figure": "05",
-      "caption": "Рисунок 5 — Редакции одного документа.",
       "role": "Автор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "a6e94f4fdd577554c4ef2730b2b048f41e32aa117b32bf3d9743f0a1f661b6c1"
+      "sha256": "a6e94f4fdd577554c4ef2730b2b048f41e32aa117b32bf3d9743f0a1f661b6c1",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/author.md",
+          "figure": 3,
+          "caption": "Рисунок 3 — Редакции одного документа."
+        }
+      ],
+      "source_name": "codex-clipboard-4ed87799-9dde-4fdb-a04f-64645de77400.png"
     },
     {
       "file": "docs/public/images/ui-06-transfers.png",
-      "figure": "06",
-      "caption": "Рисунок 6 — Список передач на проверку.",
       "role": "Автор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "90aff082fc04389fa3cf6355f4863c62eba5737619f79b3d612745376db103d3"
+      "sha256": "90aff082fc04389fa3cf6355f4863c62eba5737619f79b3d612745376db103d3",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/transfer.md",
+          "figure": 4,
+          "caption": "Рисунок 4 — Список передач на проверку."
+        }
+      ],
+      "source_name": "codex-clipboard-59c534f1-33db-4375-b8e2-10d010650355.png"
     },
     {
       "file": "docs/public/images/ui-07-transfer.png",
-      "figure": "07",
-      "caption": "Рисунок 7 — Карточка передачи редакции на проверку.",
       "role": "Администратор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "094c4ffb9b3df6a6b12d5448dcec80c93ef5d1786b09cef1fc27625c1b69011a"
+      "sha256": "094c4ffb9b3df6a6b12d5448dcec80c93ef5d1786b09cef1fc27625c1b69011a",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/transfer.md",
+          "figure": 5,
+          "caption": "Рисунок 5 — Карточка передачи редакции на проверку."
+        }
+      ],
+      "source_name": "codex-clipboard-ab113935-316a-4aac-8d45-164d21de751a.png"
     },
     {
       "file": "docs/public/images/ui-08-review.png",
-      "figure": "08",
-      "caption": "Рисунок 8 — Заполнение результата проверки.",
       "role": "Проверяющий",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "ebb4396ed34cf57ddd4912e49744ddcfd63a3dd368c3bf93860862812c9100ec"
+      "sha256": "ebb4396ed34cf57ddd4912e49744ddcfd63a3dd368c3bf93860862812c9100ec",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/review.md",
+          "figure": 6,
+          "caption": "Рисунок 6 — Выбор решения «Согласовано» до записи и проведения."
+        }
+      ],
+      "source_name": "codex-clipboard-8162a69e-3560-4590-b3b4-28b03619b5c6.png"
     },
     {
       "file": "docs/public/images/ui-09-decisions.png",
-      "figure": "09",
-      "caption": "Рисунок 9 — Сохранённые результаты проверки.",
       "role": "Проверяющий",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "c51c4e7fa71ba1d62aa3f856585b9d986d807d1e87498088562766c13ea8c32c"
+      "sha256": "c51c4e7fa71ba1d62aa3f856585b9d986d807d1e87498088562766c13ea8c32c",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/review.md",
+          "figure": 7,
+          "caption": "Рисунок 7 — Сохранённые результаты проверки."
+        }
+      ],
+      "source_name": "codex-clipboard-027deaa9-7e70-4323-a6e2-e5ad348f765d.png"
     },
     {
       "file": "docs/public/images/ui-10-plan.png",
-      "figure": "10",
-      "caption": "Рисунок 10 — Создание плана комплекта.",
       "role": "Руководитель",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "be879b013ef476c65801ea58b337681d26aca10a688d34292a136853c1a97fb8"
+      "sha256": "be879b013ef476c65801ea58b337681d26aca10a688d34292a136853c1a97fb8",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/plan.md",
+          "figure": 8,
+          "caption": "Рисунок 8 — Новый план комплекта до заполнения."
+        }
+      ],
+      "source_name": "codex-clipboard-e85102af-ddd0-46d5-bb53-04c2155a8a1d.png"
     },
     {
       "file": "docs/public/images/ui-11-plans.png",
-      "figure": "11",
-      "caption": "Рисунок 11 — Список планов комплекта.",
       "role": "Руководитель",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "6d5e31b3dbbbf70a9fbf1ba98fa5ccf750a6c3fb1682de34cc21d67249c4e190"
+      "sha256": "6d5e31b3dbbbf70a9fbf1ba98fa5ccf750a6c3fb1682de34cc21d67249c4e190",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/plan.md",
+          "figure": 11,
+          "caption": "Рисунок 11 — Сохранённый план релиза 1.2 в списке."
+        }
+      ],
+      "source_name": "codex-clipboard-80e57e30-3224-4ab3-a144-f13081f8a8fb.png"
     },
     {
       "file": "docs/public/images/ui-12-readiness.png",
-      "figure": "12",
-      "caption": "Рисунок 12 — Готовность комплекта документации.",
       "role": "Руководитель",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "cdf9c9bc5be5fac176e9a83e1ee421151e6bd7aa66b8e2b06f638ed3166708c1"
+      "sha256": "cdf9c9bc5be5fac176e9a83e1ee421151e6bd7aa66b8e2b06f638ed3166708c1",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/readiness.md",
+          "figure": 12,
+          "caption": "Рисунок 12 — Готовность комплекта документации."
+        }
+      ],
+      "source_name": "codex-clipboard-08e7aa95-eccb-4090-9e78-54924e920ca7.png"
     },
     {
       "file": "docs/public/images/ui-13-release.png",
-      "figure": "13",
-      "caption": "Рисунок 13 — Состав выпущенного комплекта.",
       "role": "Руководитель",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "33909cf55b79be86387b38a0a8bd48673d870c5bb5a9a88097187d4f61ad4df0"
+      "sha256": "33909cf55b79be86387b38a0a8bd48673d870c5bb5a9a88097187d4f61ad4df0",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/release.md",
+          "figure": 13,
+          "caption": "Рисунок 13 — Состав комплекта в карточке выпуска."
+        }
+      ],
+      "source_name": "codex-clipboard-a0adeeea-ecf3-46b9-b4a2-a5ab022c87cc.png"
     },
     {
       "file": "docs/public/images/ui-14-snapshot.jpg",
-      "figure": "14",
-      "caption": "Рисунок 14 — Сведения о согласовании документов в выпуске.",
       "role": "Руководитель",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "native-window-capture",
       "edited": false,
-      "sha256": "0980e8d0fde50f56bd45aef170500c4f5aaa3c18b3f5fdbd27ef88a081c99515"
+      "sha256": "0980e8d0fde50f56bd45aef170500c4f5aaa3c18b3f5fdbd27ef88a081c99515",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/release.md",
+          "figure": 14,
+          "caption": "Рисунок 14 — Сведения о согласовании документов в выпуске."
+        }
+      ]
     },
     {
       "file": "docs/public/images/ui-15-designer.png",
-      "figure": "15",
-      "caption": "Рисунок 15 — Конфигурация DocRelease в Конфигураторе.",
       "role": "Администратор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "5e6dfad871a25164d0ebbd49c26a4c500e4daf5d25a5e4b488250cfcb61cee45"
+      "sha256": "5e6dfad871a25164d0ebbd49c26a4c500e4daf5d25a5e4b488250cfcb61cee45",
+      "uses": [
+        {
+          "guide": "DR-INSTALL",
+          "page": "deployment/install.md",
+          "figure": 1,
+          "caption": "Рисунок 1 — Дерево DocRelease после загрузки файлов конфигурации."
+        }
+      ],
+      "source_name": "codex-clipboard-31fa9abc-2f34-4f07-99c5-5fcf7785077b.png"
     },
     {
       "file": "docs/public/images/ui-16-role-list.png",
-      "figure": "16",
-      "caption": "Рисунок 16 — Выбор роли в карточке пользователя.",
       "role": "Администратор",
       "app_version": "0.7.0-dev",
       "platform": "8.3.27.1508",
       "captured": "2026-10-20",
       "origin": "user-provided-original",
       "edited": false,
-      "sha256": "c7a5ddac64d4d4817d67e2aedf165b88e64f4498b3a01dadb9a0b4a39dacd162"
+      "sha256": "c7a5ddac64d4d4817d67e2aedf165b88e64f4498b3a01dadb9a0b4a39dacd162",
+      "uses": [
+        {
+          "guide": "DR-ADMIN",
+          "page": "admin/users.md",
+          "figure": 3,
+          "caption": "Рисунок 3 — Вкладка «Прочие»: список ролей до установки флажка."
+        },
+        {
+          "guide": "DR-INSTALL",
+          "page": "deployment/first-run.md",
+          "figure": 4,
+          "caption": "Рисунок 4 — Роли пользователя на вкладке «Прочие» до установки флажка."
+        }
+      ],
+      "source_name": "codex-clipboard-8cb476b4-6fc1-4d1c-b795-7c54e2bca414.png"
+    },
+    {
+      "file": "docs/public/images/ui-17-login.png",
+      "role": "Окно входа",
+      "app_version": "0.7.0-dev",
+      "platform": "8.3.27.1508",
+      "provided_at": "2026-10-20T13:52:40.008Z",
+      "origin": "user-provided-original",
+      "source_name": "codex-clipboard-12186cd2-ad06-47c2-a128-2cbb304aa853.png",
+      "edited": false,
+      "sha256": "1b84d08a2a0bef1d8371238a1ba23f25ec1e0620eff7ba98cde9666b27e699eb",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/getting-started.md",
+          "figure": 1,
+          "caption": "Рисунок 1 — Окно входа в DocRelease до выбора пользователя."
+        },
+        {
+          "guide": "DR-INSTALL",
+          "page": "deployment/first-run.md",
+          "figure": 5,
+          "caption": "Рисунок 5 — Окно входа перед выбором созданной учётной записи."
+        }
+      ]
+    },
+    {
+      "file": "docs/public/images/ui-18-user-basics.png",
+      "role": "Конфигуратор",
+      "app_version": "0.7.0-dev",
+      "platform": "8.3.27.1508",
+      "provided_at": "2026-10-20T13:48:34.497Z",
+      "origin": "user-provided-original",
+      "source_name": "codex-clipboard-7f086b6b-a652-4e28-a47e-2dce8a684774.png",
+      "edited": false,
+      "sha256": "9eb1982448a45f78c4412d92803328d7ad2a983863771be493a6cd9915f4c878",
+      "uses": [
+        {
+          "guide": "DR-ADMIN",
+          "page": "admin/users.md",
+          "figure": 2,
+          "caption": "Рисунок 2 — Вкладка «Основные» новой учётной записи до заполнения."
+        },
+        {
+          "guide": "DR-INSTALL",
+          "page": "deployment/first-run.md",
+          "figure": 3,
+          "caption": "Рисунок 3 — Новая карточка пользователя: поля имени до заполнения."
+        }
+      ]
+    },
+    {
+      "file": "docs/public/images/ui-19-users-empty.png",
+      "role": "Конфигуратор",
+      "app_version": "0.7.0-dev",
+      "platform": "8.3.27.1508",
+      "provided_at": "2026-10-20T13:47:44.011Z",
+      "origin": "user-provided-original",
+      "source_name": "codex-clipboard-547d88c3-67fe-4364-b15a-12a4b8bc7dc8.png",
+      "edited": false,
+      "sha256": "63a0dcb62fa9c6ca4cc223568c3ec0036ad8273a588d7742c7237a8474a4bbe9",
+      "uses": [
+        {
+          "guide": "DR-INSTALL",
+          "page": "deployment/first-run.md",
+          "figure": 2,
+          "caption": "Рисунок 2 — Пустой список пользователей перед первоначальной настройкой."
+        }
+      ]
+    },
+    {
+      "file": "docs/public/images/ui-20-employees-unlinked.png",
+      "role": "Администратор",
+      "app_version": "0.7.0-dev",
+      "platform": "8.3.27.1508",
+      "provided_at": "2026-10-20T14:03:27.956Z",
+      "origin": "user-provided-original",
+      "source_name": "codex-clipboard-d08f758f-2d7f-4860-a197-9396c3f0b204.png",
+      "edited": false,
+      "sha256": "647a1a4e2bd2f9bf06db05004ea6d80564877541e5bf824ffa8377eb200aed0b",
+      "uses": [
+        {
+          "guide": "DR-ADMIN",
+          "page": "admin/users.md",
+          "figure": 4,
+          "caption": "Рисунок 4 — Сотрудники до связи с пользователями базы."
+        }
+      ]
+    },
+    {
+      "file": "docs/public/images/ui-21-plan-header.png",
+      "role": "Руководитель выпуска",
+      "app_version": "0.7.0-dev",
+      "platform": "8.3.27.1508",
+      "provided_at": "2026-10-20T14:31:35.418Z",
+      "origin": "user-provided-original",
+      "source_name": "codex-clipboard-dede1f5a-60ba-4a87-ae96-dc1641666a5b.png",
+      "edited": false,
+      "sha256": "f3b10557a71833d1862cd63445f4be836faba0e0a2a2f24f1a9b5d22caf4ecee",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/plan.md",
+          "figure": 9,
+          "caption": "Рисунок 9 — Основные сведения плана заполнены; состав ещё пуст."
+        }
+      ]
+    },
+    {
+      "file": "docs/public/images/ui-22-plan-document.png",
+      "role": "Руководитель выпуска",
+      "app_version": "0.7.0-dev",
+      "platform": "8.3.27.1508",
+      "provided_at": "2026-10-20T14:31:48.603Z",
+      "origin": "user-provided-original",
+      "source_name": "codex-clipboard-776e7345-5060-4c69-8ed7-666f36a4197c.png",
+      "edited": false,
+      "sha256": "3779810efacf5e8bb8edeaf27667a787c789d4eff909d7f456de70c722e66ea0",
+      "uses": [
+        {
+          "guide": "DR-USER",
+          "page": "user/plan.md",
+          "figure": 10,
+          "caption": "Рисунок 10 — В план добавлен документ; остальные поля строки ещё не заполнены."
+        }
+      ]
     }
-  ]
+  ],
+  "schema_version": 2,
+  "numbering": "Sequential within each guide, following guide-order.json; asset filenames are stable and do not encode figure numbers."
 }

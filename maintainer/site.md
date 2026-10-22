@@ -3,7 +3,7 @@ title: "Сборка и просмотр документации"
 description: "Сборка и просмотр документации — DocRelease 0.7.0-dev"
 doc_id: DR-INSTALL
 app_version: 0.7.0-dev
-docs_version: 1.1.0
+docs_version: 1.1.1
 reviewed: 2026-10-21
 ---
 

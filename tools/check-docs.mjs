@@ -45,7 +45,60 @@ for(const guide of project.guides){
 }
 const media=json('evidence/media-manifest.json').images
 for(const item of media){const p=path.join(root,item.file);if(!fs.existsSync(p)||sha(p)!==item.sha256)errors.push(`Image changed: ${item.file}`)}
+// A screenshot has a stable asset name and a separate number for every guide usage.
+const expectedUses=new Map(media.map(item=>[item.file,[]]))
+let figures=0
+for(const guide of project.guides){
+  let next=1
+  for(const chapter of order[guide.id]||[]){
+    const file=path.join(docs,chapter)
+    if(!fs.existsSync(file))continue
+    const text=read(file), pageNumbers=new Set()
+    const pattern=/!\[(Рисунок (\d+) — [^\]\n]+)\]\((\/images\/[^)]+)\)/g
+    for(const match of text.matchAll(pattern)){
+      const [,caption,value,url]=match,number=Number(value),asset='docs/public'+url
+      figures++;pageNumbers.add(number)
+      if(number!==next)errors.push(`${chapter}: figure ${number}, expected ${next} in ${guide.id}`)
+      next++
+      // The visible caption must immediately follow the linked original image.
+      const after=text.slice(match.index+match[0].length)
+      const visible=after.match(/^\]\([^\n]+\)\s*\n\s*\n\*([^\n]+)\*/)
+      if(visible?.[1]!==caption)errors.push(`${chapter}: image alt and visible caption differ for figure ${number}`)
+      const uses=expectedUses.get(asset)
+      if(!uses)errors.push(`${chapter}: screenshot not in media manifest: ${url}`)
+      else uses.push({guide:guide.id,page:chapter,figure:number,caption})
+    }
+    const prose=text.replace(/\[!\[[^\n]+\n\n\*Рисунок [^\n]+\*/g,'')
+    const references=[...prose.matchAll(/(?:рисунок|рисунке) (\d+)/g)].map(m=>Number(m[1]))
+    for(const number of references)if(!pageNumbers.has(number))errors.push(`${chapter}: reference to missing figure ${number}`)
+    for(const number of pageNumbers)if(!references.includes(number))errors.push(`${chapter}: figure ${number} has no reference in prose`)
+  }
+}
+for(const item of media){
+  const expected=expectedUses.get(item.file)
+  if(!expected.length)errors.push(`Unused screenshot in manifest: ${item.file}`)
+  if(JSON.stringify(item.uses)!==JSON.stringify(expected))errors.push(`Figure usage differs from manifest: ${item.file}`)
+}
+// The downloadable kit and the browsable source folder must contain the same bytes.
+const kit=json('docs/public/downloads/package-manifest.json')
+const kitRoot=path.resolve(root,kit.source_directory)
+if(!inside(path.join(root,'application'),kitRoot))errors.push('Package source directory escapes application/')
+else {
+  const sourceFiles=walk(kitRoot).map(p=>path.relative(kitRoot,p).split(path.sep).join('/')).sort()
+  const declared=kit.files.map(f=>f.path.replace(/^configuration\//,'')).sort()
+  if(JSON.stringify(sourceFiles)!==JSON.stringify(declared)||declared.length!==kit.configuration_file_count)errors.push('Package source inventory differs from manifest')
+  for(const item of kit.files){
+    const p=path.resolve(kitRoot,item.path.replace(/^configuration\//,''))
+    if(!inside(kitRoot,p)||!fs.existsSync(p)||sha(p)!==item.sha256||fs.statSync(p).size!==item.bytes)errors.push(`Package file changed: ${item.path}`)
+  }
+  const configuration=read(path.join(kitRoot,'Configuration.xml'))
+  if(!configuration.includes(`<Version>${project.app_version}</Version>`))errors.push('Configuration version differs from documentation')
+}
+const archive=path.resolve(root,'docs/public/downloads',kit.filename)
+if(!inside(path.join(root,'docs/public/downloads'),archive)||!fs.existsSync(archive)||sha(archive)!==kit.sha256||fs.statSync(archive).size!==kit.bytes)errors.push('Download archive differs from manifest')
+if(kit.app_version!==project.app_version)errors.push('Download version differs from documentation')
+if(read(path.join(root,'docs/public/downloads/SHA256SUMS.txt')).trim()!==`${kit.sha256}  ${kit.filename}`)errors.push('Download checksum file differs')
 const publicFiles=walk(docs).filter(p=>inside(path.join(docs,'public'),p))
 if(publicFiles.some(p=>/\.(?:1cd|dt|cf|log|epf)$/i.test(p)))errors.push('Local database or log in public assets')
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
-console.log(`PASS: ${md.length} pages; ${project.guides.length} guides; ${links} links; ${images} image references; ${media.length} original screenshots`)
+console.log(`PASS: ${md.length} pages; ${project.guides.length} guides; ${links} links; ${figures} numbered figures; ${media.length} original screenshots; ${kit.configuration_file_count} package files`)

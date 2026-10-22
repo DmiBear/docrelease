@@ -108,7 +108,7 @@
       "text": "Установка",
       "items": [
         {
-          "text": "Руководство по установке",
+          "text": "Установка DocRelease",
           "link": "/deployment/"
         },
         {
@@ -116,11 +116,11 @@
           "link": "/deployment/requirements"
         },
         {
-          "text": "Установка новой базы",
+          "text": "Создание базы и загрузка",
           "link": "/deployment/install"
         },
         {
-          "text": "Первоначальная настройка",
+          "text": "Пользователи и первый вход",
           "link": "/deployment/first-run"
         }
       ]
